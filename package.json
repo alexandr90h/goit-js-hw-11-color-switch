@@ -1,0 +1,31 @@
+{
+  "name": "goit-js-hw-11-color-switch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "pro": "parcel build index.html --no-source-maps --no-cache --public-url .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "parcelCleanPaths": [
+    "dist",
+    ".cache"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandr90h/goit-js-hw-11-color-switch.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexandr90h/goit-js-hw-11-color-switch/issues"
+  },
+  "homepage": "https://github.com/alexandr90h/goit-js-hw-11-color-switch#readme",
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "parcel-plugin-clean-easy": "^1.0.2",
+    "sass": "^1.27.0"
+  }
+}

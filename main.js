@@ -9,3 +9,20 @@ const colors = [
 const randomIntegerFromInterval = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
 };
+refs = {
+  bodyElem: document.querySelector('body'),
+  btnStartElem: document.querySelector('button[data-action="start"]'),
+  btnStopElem: document.querySelector('button[data-action="stop"]')
+}
+refs.btnStartElem.addEventListener('click', changeColor);
+function changeColor() {
+  setInterval(() => {
+    colorNum = randomIntegerFromInterval(0, 5);
+    if (colorNumNew === colorNum) {
+      colorNum = randomIntegerFromInterval(0, 5);
+    }
+    refs.bodyElem.style.backgroundColor = colors[colorNum];
+    console.log(colorNum);
+    let colorNumNew = colorNum;
+  },1000)
+}
